@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Famous Personalities</title>
+  <style>
+    /* CSS code for the GUI */
+    body, h1, h2, h3, p {
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-image: url('background.jpg');
+    }
+    
+    /* Navigation bar */
+    .navbar {
+      background-color: #067848;
+      color: white;
+      padding: 10px 0;
+    }
+
+    .navbar .container {
+      display: flex;
+      justify-content: center; /* Center the content horizontally */
+      align-items: center;
+    }
+
+    .navbar a {
+      color: white; /* Set link color to white */
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+
+    .search-bar {
+      width: 300px;
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    /* Famous personalities container */
+    .personalities-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+      grid-gap: 20px; /* Add a gap between the grid items */
+      padding: 10px 0;
+    }
+
+    .personality-box {
+      flex-basis: calc(50% - 40px); /* Two boxes per line */
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 20px; /* Add a gap between the boxes */
+    }
+
+    .personality-box img {
+      width: 50%; /* Reduce the width of the images */
+      height: auto; /* Reduce the height of the images */
+    }
+
+    .personality-box p {
+      font-size: 16px; /* Increase the font size */
+      font-weight: bold; /* Make the font bold */
+      color: black; /* Set the color of the names to black */
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #067848;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto;
+    }
+
+    /* Back button */
+    .back-button {
+      position: absolute;
+      bottom: -1250px; /* Adjust the distance above the footer */
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #067848;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    
+    .back-button:hover {
+      background-color: #067848;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="container">
+      <div>
+        <a href="home.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+      <div>
+        <input type="text" class="search-bar" placeholder="Search">
+      </div>
+    </div>
+  </div>
+  
+  <div class="personalities-container">
+    <div class="personality-box">
+        <a href="einstein.html">
+      <img src="einstein.jpg" alt="Albert Einstein">
+      <p><em>Albert Einstein</em></p>
+    </a>
+    </div>
+    <div class="personality-box">
+        <a href="gandhi.html">
+      <img src="gandhi.jpg" alt="Mahatma Gandhi">
+      <p><em>Mahatma Gandhi</em></p>
+      </a>
+    </div>
+    <div class="personality-box">
+        <a href="mlk.html">
+      <img src="mlk.jpg" alt="Martin Luther King Jr.">
+      <p><em>Martin Luther King Jr.</em></p>
+        </a>
+    </div>
+    <div class="personality-box">
+        <a href="curi.html">
+      <img src="marie_curie.jpg" alt="Marie Curie">
+      <p><em>Marie Curie</em></p>
+        </a>
+    </div>
+    <div class="personality-box">
+        <a href="mandela.html">
+        <img src="nelson_mandela.jpg" alt="Nelson Mandela">
+        <p><em>Nelson Mandela</em></p>
+        </a>
+      </div>
+      <div class="personality-box">
+        <a href="vivekananda.html
+        ">
+        <img src="Swami_Vivekananda.jpg" alt="Swami Vivekananda">
+        <p><em>Swami Vivekananda</em></p>
+        </a>
+      </div>
+
+  </div>
+
+  <a href="home.html" class="back-button">Back to Home</a>
+  
+  <div class="footer">
+    <div class="container">
+      &copy; 2023 Syntax Squad. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>

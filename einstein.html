@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Famous Personalities</title>
+  <style>
+    /* CSS code for the GUI */
+    body, h1, h2, h3, p {
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-image: url('background.jpg');
+    }
+    
+    /* Navigation bar */
+    .navbar {
+      background-color: #067848;
+      color: white;
+      padding: 10px 0;
+    }
+
+    .navbar .container {
+      display: flex;
+      justify-content: center; /* Center the content horizontally */
+      align-items: center;
+    }
+
+    .navbar a {
+      color: white; /* Set link color to white */
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+
+    .search-bar {
+      width: 300px;
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    /* Famous personalities container */
+    .personalities-container {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  flex-wrap: wrap; /* Allow the boxes to wrap to the next line */
+  padding: 10px 0;
+}
+
+.personality-box {
+  text-align: center;
+  padding: 100px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px; /* Add a gap between the boxes */
+}
+
+    .personality-box img {
+      width: 50%; /* Reduce the width of the images */
+      height: auto; /* Reduce the height of the images */
+    }
+
+    .personality-box p {
+      font-size: 16px; /* Increase the font size */
+      font-weight: bold; /* Make the font bold */
+      color: black; /* Set the color of the names to black */
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #067848;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto;
+    }
+
+    /* Back button */
+    .back-button {
+      position: absolute;
+      bottom: -100px; /* Adjust the distance above the footer */
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #067848;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    
+    .back-button:hover {
+      background-color: #067848;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="container">
+      <div>
+        <a href="home.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+      <div>
+        <input type="text" class="search-bar" placeholder="Search">
+      </div>
+    </div>
+  </div>
+  
+  <div class="personalities-container">
+    <div class="personality-box">
+      <img src="einstein.jpg" alt="Albert Einstein">
+      <p><em>Albert Einstein</em></p>
+      <p>"Imagination is more important than knowledge."</p>
+      <p>"The only source of knowledge is experience."</p>
+      <p>"Logic will get you from A to B. Imagination will take you everywhere."</p>
+      <p>"The true sign of intelligence is not knowledge but imagination."</p>
+      <p>"In the middle of difficulty lies opportunity."</p>
+    </div>
+  </div>
+
+  <a href="personalities.html" class="back-button">Back</a>
+  
+  <div class="footer">
+    <div class="container">
+      &copy; 2023 Syntax Squad. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
