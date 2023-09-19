@@ -15,9 +15,9 @@
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      background-image: url('background.gif'); /* Replace 'background.gif' with the path to your GIF image */
-      background-repeat: no-repeat; /* Prevent the background image from repeating */
-      background-size: cover; /* Cover the entire body with the background image */
+      background-image: url('background.gif');
+      background-repeat: no-repeat;
+      background-size: cover;
     }
     
     /* Navigation bar */
@@ -29,12 +29,12 @@
 
     .navbar .container {
       display: flex;
-      justify-content: center; /* Center the content horizontally */
+      justify-content: center;
       align-items: center;
     }
 
     .navbar a {
-      color: white; /* Set link color to white */
+      color: white;
       text-decoration: none;
       font-weight: bold;
       margin-right: 20px;
@@ -106,7 +106,7 @@
     }
 
     .navbar a:first-child {
-      margin-right: 20px; /* Adjust the value to move it further right */
+      margin-right: 20px;
     }
 
     .search-bar {
@@ -126,7 +126,7 @@
     .quote-section {
       padding: 30px 0;
       text-align: center;
-      margin-top: -20px; /* Adjust the margin to move the box up */
+      margin-top: -20px;
     }
 
     .quote-section h2 {
@@ -135,14 +135,14 @@
     }
 
     .quote-section p {
-      font-size: 24px; /* Increase the font size */
+      font-size: 24px;
       font-style: italic;
       color: #555;
-      margin-top: 20px; /* Add spacing between heading and quote */
+      margin-top: 20px;
     }
 
     .quote-author {
-      font-size: 18px; /* Adjust the author font size */
+      font-size: 18px;
       font-weight: bold;
       margin-top: 10px;
     }
@@ -161,16 +161,17 @@
 
     /* Main content box */
     .main-content {
-      background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+      background-image: url('background.jpg'); /* Replace with the path to your image */
+      background-size: cover;
       padding: 20px;
       border-radius: 10px;
       margin: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
     .about-content {
       text-align: center;
-      padding: 200px 0;
-      color: black; /* Change the main font color to black */
+      padding: 30px 0; /* Adjust the padding to add spacing between the heading and paragraph */
+      color: black;
     }
   </style>
 </head>
@@ -179,13 +180,11 @@
     <div class="container">
       <div>
         <a href="home.html">Home</a>
-        <a href="#">About</a>
+        <a href="about.html">About</a>
         <a href="services.html">Services</a>
-        <a href="#">Contact</a>
       </div>
+    </div>
   </div>
-  
-
   
   <div class="main-content">
     <div class="container">
@@ -210,6 +209,5 @@
   <div class="footer">
     &copy; 2023 Syntax Squad. All rights reserved.
   </div>
-</div>
 </body>
 </html>
